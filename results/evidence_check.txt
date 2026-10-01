@@ -1,0 +1,19 @@
+QUOTE CHECK (positive-capability cells, all rows)
+  revocability: 71/78 cells have a verbatim-found quote; 0 carry no quoted fragment; 7 quoted but not found verbatim
+  credential_lifetime: 71/77 cells have a verbatim-found quote; 1 carry no quoted fragment; 5 quoted but not found verbatim
+  scoping_granularity: 305/329 cells have a verbatim-found quote; 0 carry no quoted fragment; 24 quoted but not found verbatim
+  attribution: 224/235 cells have a verbatim-found quote; 1 carry no quoted fragment; 10 quoted but not found verbatim
+  consent_surface: 184/197 cells have a verbatim-found quote; 1 carry no quoted fragment; 12 quoted but not found verbatim
+  credential_delivery: 809/857 cells have a verbatim-found quote; 6 carry no quoted fragment; 42 quoted but not found verbatim
+
+KEYWORD CEILING (credential-requiring rows, n=857)
+  revocability: labelled 71 (8.3%); keyword hit in 24 of the other 786; ceiling 95 (11.1%)
+      hit rows by label: insufficient_data 15, shared_key_rotation_only 8, none 1
+  credential_lifetime: labelled 75 (8.8%); keyword hit in 135 of the other 782; ceiling 210 (24.5%)
+      hit rows by label: long_lived_static 71, insufficient_data 64
+  scoping_granularity: labelled 290 (33.8%); keyword hit in 233 of the other 567; ceiling 523 (61.0%)
+      hit rows by label: all_or_nothing 175, insufficient_data 57, none 1
+  attribution: labelled 199 (23.2%); keyword hit in 72 of the other 658; ceiling 271 (31.6%)
+      hit rows by label: shared_identity 57, insufficient_data 15
+
+PER-TOOL OPERATOR SWITCH: 82 of 101 per_tool evidence strings name a switch

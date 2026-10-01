@@ -1,0 +1,16 @@
+flagged agent_reachable_consent rows: 36; hand-reviewed: 36
+
+BY CATEGORY
+  agent_completes: 24
+      confirm_parameter: 13
+      approval_tool: 6
+      two_call_token: 5
+  agent_started_login: 4
+  not_an_approval_step: 3
+  unclear: 2
+  client_dialog_with_agent_fallback: 2
+  human_held_code: 1
+
+confirmation completed in the agent's own tool call: 24 of 36
+  of those, README says the agent cannot bypass/skip the step: 4
+READMEs (all 36) that state the limit of their own confirmation step: 3

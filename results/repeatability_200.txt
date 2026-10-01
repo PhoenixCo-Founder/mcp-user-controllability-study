@@ -1,0 +1,32 @@
+A=classifications-full-readme-2026-09-30-v2.jsonl (1634 rows)  B=classifications-full-readme-2026-09-30-v2-repeat200.jsonl (200 rows)  shared=200
+  credential_delivery: 190/200 = 95.0% same
+      none_needed -> env_var_static_key: 2
+      none_needed -> config_file: 1
+      config_file -> env_var_static_key: 1
+      none_needed -> insufficient_data: 1
+  scoping_granularity: 160/200 = 80.0% same
+      insufficient_data -> all_or_nothing: 8
+      all_or_nothing -> insufficient_data: 5
+      per_tool -> all_or_nothing: 3
+      none -> insufficient_data: 3
+  revocability: 158/200 = 79.0% same
+      none -> insufficient_data: 15
+      insufficient_data -> none: 5
+      insufficient_data -> shared_key_rotation_only: 4
+      redeploy_only -> none: 3
+  credential_lifetime: 164/200 = 82.0% same
+      long_lived_static -> insufficient_data: 21
+      insufficient_data -> long_lived_static: 6
+      none -> insufficient_data: 5
+      none -> long_lived_static: 2
+  consent_surface: 180/200 = 90.0% same
+      none -> connection_time_approval: 6
+      none -> insufficient_data: 4
+      insufficient_data -> none: 4
+      connection_time_approval -> insufficient_data: 1
+  attribution: 177/200 = 88.5% same
+      shared_identity -> insufficient_data: 11
+      insufficient_data -> shared_identity: 8
+      per_user_agent_attribution -> insufficient_data: 2
+      per_user_agent_attribution -> shared_identity: 1
+  OVERALL: 1029/1200 = 85.8% of cells same

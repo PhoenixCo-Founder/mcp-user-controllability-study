@@ -1,0 +1,43 @@
+rows: 1634   auth-required: 857/1634 = 52.4%
+
+credential_delivery (all rows):
+  none_needed: 668 (40.9%)
+  env_var_static_key: 585 (35.8%)
+  config_file: 139 (8.5%)
+  insufficient_data: 109 (6.7%)
+  oauth_redirect: 104 (6.4%)
+  user_mediated: 29 (1.8%)
+
+scoping_granularity (all rows):
+  none: 631 (38.6%)
+  all_or_nothing: 416 (25.5%)
+  insufficient_data: 258 (15.8%)
+  per_tool: 127 (7.8%)
+  user_selected_scope: 85 (5.2%)
+  per_user: 67 (4.1%)
+  per_action: 50 (3.1%)
+
+revocability (all rows):
+  insufficient_data: 816 (49.9%)
+  none: 652 (39.9%)
+  documented_revocation: 78 (4.8%)
+  shared_key_rotation_only: 49 (3.0%)
+  redeploy_only: 39 (2.4%)
+
+credential_lifetime (all rows):
+  none: 658 (40.3%)
+  insufficient_data: 526 (32.2%)
+  long_lived_static: 373 (22.8%)
+  expiring: 74 (4.5%)
+  user_chosen_duration: 3 (0.2%)
+
+consent_surface (all rows):
+  none: 1309 (80.1%)
+  connection_time_approval: 161 (9.9%)
+  insufficient_data: 128 (7.8%)
+  agent_reachable_consent: 36 (2.2%)
+
+attribution (all rows):
+  insufficient_data: 833 (51.0%)
+  shared_identity: 566 (34.6%)
+  per_user_agent_attribution: 235 (14.4%)
